@@ -12,6 +12,7 @@ spec:
       labels:
         app.kubernetes.io/name: whoami
     spec:
+      serviceAccountName: whoami
       containers:
         - name: whoami-app
           image: traefik/whoami:v1.10.2

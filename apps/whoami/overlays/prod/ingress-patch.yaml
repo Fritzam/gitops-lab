@@ -4,7 +4,7 @@ metadata:
   name: whoami
 spec:
   rules:
-    - host: whoami-dev.192.168.0.25.nip.io
+    - host: whoami-prod.192.168.0.25.nip.io
       http:
         paths:
           - path: /

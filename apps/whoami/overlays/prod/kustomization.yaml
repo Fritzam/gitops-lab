@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: whoami-prod
+
+resources:
+  - ../../base
+
+labels:
+  - pairs:
+      instance: whoami-prod
+    includeSelectors: false
+
+replicas:
+  - name: whoami
+    count: 2
+
+patches:
+  - path: ingress-patch.yaml
