@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - whoami-dev.yaml
   - whoami-prod.yaml
+  - infra-argocd.yaml
