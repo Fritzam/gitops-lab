@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: infra-namespaces
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:Fritzam/gitops-lab.git
+    targetRevision: main
+    path: apps/whoami/overlays/prod
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: whoami-prod
+
+  syncPolicy:
+    autoamted:
+      prune: true
+      selfHeal: true
