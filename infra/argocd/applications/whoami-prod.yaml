@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infra-namespaces
+  name: whoami-prod
   namespace: argocd
 spec:
   project: default
