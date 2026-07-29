@@ -15,6 +15,6 @@ spec:
     namespace: whoami-prod
 
   syncPolicy:
-    autoamted:
+    automated:
       prune: true
       selfHeal: true

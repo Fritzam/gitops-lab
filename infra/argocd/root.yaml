@@ -10,6 +10,8 @@ spec:
     repoURL: git@github.com:Fritzam/gitops-lab.git
     targetRevision: main
     path: infra/argocd/applications
+    directory:
+      recurse: true
 
   destination:
     server: https://kubernetes.default.svc
