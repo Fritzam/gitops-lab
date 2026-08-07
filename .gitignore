@@ -1,3 +1,17 @@
 #Text editors
 .idea/
 .vscode/
+
+#MacOS
+**/.DS_Store
+
+#Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+*.auto.tfvars
+*.tfplan
+backend.hcl
+crash.log
+crash.*.log
