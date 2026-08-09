@@ -14,4 +14,7 @@ terraform.tfvars
 *.tfplan
 backend.hcl
 crash.log
-crash.*.log
+
+#Template + notes
+notatki.txt
+terraform.old/*
