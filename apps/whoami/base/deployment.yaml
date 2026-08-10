@@ -15,7 +15,7 @@ spec:
       serviceAccountName: whoami
       containers:
         - name: whoami-app
-          image: traefik/whoami:v1.10.2
+          image: acrgitopsfritzam.azurecr.io/whoami:v1.10.2
           ports:
             - name: http
               containerPort: 80

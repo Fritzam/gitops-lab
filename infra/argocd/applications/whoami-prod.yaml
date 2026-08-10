@@ -3,12 +3,14 @@ kind: Application
 metadata:
   name: whoami-prod
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
     repoURL: git@github.com:Fritzam/gitops-lab.git
     targetRevision: main
-    path: apps/whoami/overlays/prod
+    path: apps/whoami/overlays/pro
 
   destination:
     server: https://kubernetes.default.svc
@@ -18,3 +20,5 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
