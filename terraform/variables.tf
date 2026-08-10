@@ -1,4 +1,4 @@
 variable "subscription_id" {
-    type = string
-    default = null
+  type    = string
+  default = null
 }
