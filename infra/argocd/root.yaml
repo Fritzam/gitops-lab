@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: git@github.com:Fritzam/gitops-lab.git
+    repoURL: https://github.com/Fritzam/gitops-lab.git
     targetRevision: main
     path: infra/argocd/applications
 
