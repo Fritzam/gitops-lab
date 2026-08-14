@@ -13,7 +13,10 @@ spec:
     chart: traefik
     targetRevision: 41.2.0
     helm:
-      values: |
+      valuesObject:git
+        ingressClass:
+          name: traefik
+
         deployment:
           replicas: 1
 
